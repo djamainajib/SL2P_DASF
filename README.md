@@ -2,7 +2,7 @@ SL2P_DASF
 ----------
 ----------
 
-This is a modified SL2P processor [1] version for estimating leaf area index (LAI), fraction canopy cover (FCOVER), fraction of absorbed photosynthetically active radiation (FAPAR), canopy chlorophyll content (CCC) and canopy water content (CWC)from Sentinel-2A/B L2A images. Directional Area Scattering Function (DASF)was considered.
+This is a modified SL2P processor [1] version for estimating leaf area index (LAI), fraction canopy cover (FCOVER), fraction of absorbed photosynthetically active radiation (FAPAR), canopy chlorophyll content (CCC) and canopy water content (CWC)from Sentinel-2A/B L2A images. Directional Area Scattering Function (DASF) was considered for constraining estimates.
 
 Content:
 --------
