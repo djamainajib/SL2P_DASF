@@ -22,11 +22,11 @@ Input maps should be provided in separalte .tiff files at 20m spatial resolution
 
 Outputs:
 --------
-- LAI,FCOVER,FAPAR,LAI_Cw (CCC), LAI_Cab (CCC) maps.  
+- LAI, FCOVER, FAPAR, LAI_Cw (CCC), LAI_Cab (CCC) maps.  
 
 Example:
 --------
-SL2P_DASF_v_01(['.\Samples_S2L2A_data\'],'S2A_MSIL2A_20171026T110131_N0206_R094_T30SWJ_20171026T144303')
+SL2P_DASF_v_01 (['.\Samples_S2L2A_data\'], 'S2A_MSIL2A_20171026T110131_N0206_R094_T30SWJ_20171026T144303')
 
 
 References:
