@@ -33,7 +33,7 @@ SL2P_DASF_v_01 (['.\Samples_S2L2A_data\'], 'S2A_MSIL2A_20171026T110131_N0206_R09
 
 References:
 -----------
-[1] Weiss, M.; Baret, F. S2ToolBox level 2 products, version 1.1. 2016. [step.esa.int/docs/extra/ATBD_S2ToolBox_L2B_V1.1.pdf].
+[1] Weiss, M.; Baret, F. S2ToolBox level 2 products, version 1.1. 2016. [https://step.esa.int/docs/extra/ATBD_S2ToolBox_L2B_V1.1.pdf].
  
 
  
