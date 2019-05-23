@@ -18,7 +18,9 @@ Inputs:
 - view_azimuth_mean map
 - sun_azimuth map 
 
-Input maps should be provided in separalte .tiff files at 20m spatial resolution.
+Samples of input data are available in: https://drive.google.com/drive/folders/1iO0L4uTkF0vOy0VFM0ZDgd6vpfzbwv7y
+
+Input maps should be provided in separalte .tiff files at 20m spatial resolution (please see the provided samples).
 
 Outputs:
 --------
