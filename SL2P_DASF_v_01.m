@@ -1,4 +1,4 @@
-function [Input_NNT]=SL2P_MSI(varargin)
+function SL2P_DASF(varargin)
 
 %% 1. Initialization
 if ~ismember(nargin,[2,3]), disp({'!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ERROR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!';'--usage : Matlab SL2P_MSI [input_path\] [S2 tiff data folder] [output_path\ (optional)]'});return; end;
