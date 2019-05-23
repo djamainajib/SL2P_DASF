@@ -9,17 +9,16 @@ Content:
 - README.md: the actual document.
 - SL2P_DASF_v_01.m : the main code.
 - tools: containg the trained NNET used for simulating DASF and vegetation biophysical variables from S2 data as well as other auxilary code pieces.
-- Samples_S2L2A_data : providing an example of input datasets.
 
 Inputs:
 -------
-- surface reflectance data (S2L2A product) for bands: B3,B4,B5,B6,B7,B8A, B11, B12.
+- surface reflectance data (S2L2A product) for bands: B3, B4, B5, B6, B7, B8A, B11 and B12.
 - view_zenith_mean map
 - sun_zenith map
 - view_azimuth_mean map
 - sun_azimuth map 
 
-Input maps should be provided in separalte .tiff files at 20m spatial resolution (see Samples_S2L2A_data).
+Input maps should be provided in separalte .tiff files at 20m spatial resolution.
 
 Outputs:
 --------
