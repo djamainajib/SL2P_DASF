@@ -4,7 +4,7 @@ function [Input_NNT]=SL2P_MSI(varargin)
 if ~ismember(nargin,[2,3]), disp({'!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ERROR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!';'--usage : Matlab SL2P_MSI [input_path\] [S2 tiff data folder] [output_path\ (optional)]'});return; end;
 file_name=dir([varargin{1},varargin{2},'\S2*B3.tif']);
 file_name=file_name(1).name(1:end-6);
-
+addpath(genpath('.\tools'));
 %% 2. Loading data........................................................
 disp({'===============',file_name,'==============='});
 disp({'--Loading data--------------------------------------'});
@@ -39,7 +39,7 @@ D=mapminmax('reverse',sim(NET.D.NET,NNT_IN_P),NET.D.Norm_Output);
 %% 5. Simulating biophysical parameters.....................................
 disp({'--Simulating vegetation biophysical variables ----------------------------------------'});
 NNT_OUT=[];
-for d = 1:length(NET.Dlist);  
+parfor d = 1:length(NET.Dlist);  
     waitbar(d/length(NET.Dlist))
     dindex = find((D>(NET.Dlist(d)+NET.Dlist(max(1,d-1)))/2)&(D<=(NET.Dlist(d)+NET.Dlist(min(length(NET.Dlist),d+1)))/2));
     NNT_IN_D = NNT_IN(:,dindex);  
