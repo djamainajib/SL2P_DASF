@@ -39,7 +39,8 @@ D=mapminmax('reverse',sim(NET.D.NET,NNT_IN_P),NET.D.Norm_Output);
 %% 5. Simulating biophysical parameters.....................................
 disp({'--Simulating vegetation biophysical variables ----------------------------------------'});
 NNT_OUT=[];
-parfor d = 1:length(NET.Dlist);  
+
+for d = 1:length(NET.Dlist);  
     waitbar(d/length(NET.Dlist))
     dindex = find((D>(NET.Dlist(d)+NET.Dlist(max(1,d-1)))/2)&(D<=(NET.Dlist(d)+NET.Dlist(min(length(NET.Dlist),d+1)))/2));
     NNT_IN_D = NNT_IN(:,dindex);  
@@ -74,7 +75,7 @@ utmzone=utmzone{6};utmzone=[utmzone(1:2),' ',utmzone(3)];
 [bbox(:,2),bbox(:,1)] = utm2deg(bbox(:,1),bbox(:,2),[utmzone;utmzone]);
 bit_depth=32;
 
-for bb={'LAI','FCOVER'}
+for bb={'LAI','FCOVER','FAPAR','LAI_Cab','LAI_Cw'}
     geotiffwrite([out_path,strrep(file_name,'L2A','L2B'),'_',char(bb),'.tif'], bbox, eval(['reshape(NNT_OUT.',char(bb),'(:,end),r,c)']), bit_depth, Ib);
 end;
 disp({'--Done !---------------------------------------------------------'});
