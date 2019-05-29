@@ -29,7 +29,7 @@ Input_NNT(:,end-2:end)=cos(deg2rad(Input_NNT(:,end-2:end)));
 NNT_IN=Input_NNT(:,3:end)';
 %% 3. Loading NET
 disp({'--Loading NNET--------------------------------------'});
-NET=importdata('tools\NET\S2_SL2P_large_trunc_u_D_NET.mat');
+NET=importdata('tools\aux_data\S2_SL2P_large_trunc_u_D_NET.mat');
 ivars=fieldnames(NET);
 %% 4. Simulating DASF
 disp({'--Simulating DASF--------------------------------------'});
