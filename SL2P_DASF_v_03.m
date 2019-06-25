@@ -45,8 +45,8 @@ band(ismember(band,[4,5]))=0;
 no_bare_soil_or_vegetated_area=band;
 %% 3. Loading NET
 disp({'--Loading NNET--------------------------------------'});
-NET=importdata('aux_data\S2_SL2P_large_trunc_u_D_NETs.mat');
-NET_uncer=importdata('aux_data\S2_SL2P_large_trunc_u_D_uncert_NETs.mat');
+NET=importdata('aux_data\S2_SL2P_large_trunc_u_D_NET.mat');
+NET_uncer=importdata('aux_data\S2_SL2P_large_trunc_u_D_uncert_NET.mat');
 %% 4. Simulating DASF
 disp({'--Simulating DASF-----------------------------------'});
 h = waitbar(0,'Simulating veg. variables ...');
