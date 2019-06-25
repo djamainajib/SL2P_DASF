@@ -5,7 +5,7 @@ if ~ismember(nargin,[2,3]), disp({'!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ERROR!!!!!
 addpath(genpath('.\tools'));
 bio_vars={'LAI','FCOVER','FAPAR','LAI_Cab','LAI_Cw'};
 BIO_VAR_bounding_box=importdata('aux_data\BIO_VAR_bounding_box.mat');
-varargin={'G:\Najib\4_2_SL2P_v2\SL2P_DASF_v03\Samples_S2L2A_data\','S2B_MSIL2A_20180806T181019_N0206_R084_T13UCT_20180806T214545'}
+
 file_name=dir([varargin{1},varargin{2},'\S2*B3.tif']);
 file_name=file_name(1).name(1:end-6);
 
